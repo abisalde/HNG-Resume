@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.wrapper {
+    width: 100vw;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p.country,
+span.number a {
+    color: #000;
+    text-decoration: none;
+}
+
+i.far,
+i.fab {
+    font-size: 1.125rem;
+    padding-right: 0.325rem;
+    color: #000;
+}
+
+section {
+    margin-top: 1.525rem;
+    margin-bottom: 1rem;
+}
+
+hr {
+    border: 0.125rem solid #0e2845;
+    border-radius: 0.825rem;
+}
+
+h3 {
+    padding-bottom: 0.425rem;
+    font-size: 1.125rem;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.address address {
+    font-size: 1rem;
+    font-weight: 200;
+    padding: 0.526rem 0rem 0rem 0.625rem;
+}
+
+.summary p {
+    padding: 0.526rem 0rem 0rem 0.625rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.work_experience,
+.education_desc {
+    padding: 1.5rem 1.325rem 0rem;
+}
+
+.work_experience h5,
+.education_desc h5 {
+    padding-top: 0.526rem;
+    padding-left: 0.625rem;
+    font-size: 0.912rem;
+    font-weight: 600;
+}
+
+.work_experience p,
+.education_desc p {
+    font-size: 0.825rem;
+    line-height: 1.5rem;
+    padding-left: 0.625rem;
+    font-style: italic;
+}
+
+.work_experience .desc,
+.education_desc .desc {
+    padding: 0.526rem 0rem 0rem 0.625rem;
+    font-size: 0.9rem;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.skills {
+    width: 70%;
+}
+
+.cert {
+    width: 25%;
+}
+
+.skills h4 {
+    padding-top: 1rem;
+    padding-left: 0.625rem;
+}
+
+.strength span,
+.lang span,
+.progress {
+    display: block;
+    line-height: 1.725rem;
+    padding-left: 0.625rem;
+}
+
+label {
+    padding-right: 0.325rem;
+}
+.progress {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.desc_cert h5 {
+    padding: 0.526rem 0rem 0rem 0.625rem;
+    line-height: 1.3125rem;
+    font-size: 0.925rem;
+}
+
+.desc_cert ul {
+    padding-left: 1rem;
+    padding-top: 0.425rem;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 576px) {
+    .wrapper {
+        max-width: 540px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        max-width: 720px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .wrapper {
+        max-width: 950px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+        max-width: 1120px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .wrapper {
+        max-width: 1320px;
+    }
+}
