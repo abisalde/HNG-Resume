@@ -1,4 +1,5 @@
-## Zuri Portfolio Assignment
+## HNG RESUME ASSESSMENT
+- This is a challenge for HNG Internship and building my resume with HTML5 and CSS3
 
 ### Tools
 
