@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap');
 
 *,
 *::before,
@@ -9,11 +9,16 @@
 }
 
 body {
-    font-family: 'Merriweather', serif;
+    font-family: 'Merriweather Sans', sans-serif;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -webkit-touch-callout: none;
+    font-size: 0.865rem;
+}
+
+:root {
+    --color-text: #0085fa;
 }
 
 .wrapper {
@@ -24,17 +29,85 @@ body {
     margin-left: auto;
 }
 
-p.country,
-span.number a {
-    color: #000;
-    text-decoration: none;
+main,
+header,
+div,
+section,
+article,
+footer,
+nav {
+    display: block;
 }
 
-i.far,
-i.fab {
-    font-size: 1.125rem;
-    padding-right: 0.325rem;
-    color: #000;
+header {
+    padding: 2rem 0rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+img {
+    vertical-align: middle;
+}
+
+header div.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.name-desc {
+    width: 65%;
+}
+
+.name-desc h1.name {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.name-desc p {
+    padding-top: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.profile-details {
+    width: 30%;
+}
+
+.profile-details .address-email {
+    line-height: 1.65;
+    padding-bottom: 1.32rem;
+}
+
+address {
+    font-weight: 300;
+    font-size: 0.85rem;
+}
+
+span.phone-number,
+span.email {
+    font-size: 0.76rem;
+    font-weight: 600;
+}
+
+span.font-awesome {
+    padding-left: 0.62rem;
+}
+
+div.social-links {
+    padding-left: 1.5rem;
+    line-height: 1.65;
+    font-size: 0.85rem;
+}
+
+h3 {
+    font-size: 1.325rem;
+    text-transform: uppercase;
+    color: var(--color-text);
 }
 
 section {
@@ -42,108 +115,103 @@ section {
     margin-bottom: 1rem;
 }
 
-hr {
-    border: 0.125rem solid #0e2845;
-    border-radius: 0.825rem;
+main div.wrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
 }
 
-h3 {
-    padding-bottom: 0.425rem;
-    font-size: 1.125rem;
+.experience-education {
+    width: 65%;
+}
+
+.projects-skills-language {
+    width: 30%;
+}
+
+.work-experience,
+.education-desc {
+    width: 100%;
+    margin-top: 1.625rem;
 }
 
 h4 {
-    font-size: 1rem;
     font-weight: 600;
+    font-size: 1.125rem;
 }
 
-.address address {
-    font-size: 1rem;
-    font-weight: 200;
-    padding: 0.526rem 0rem 0rem 0.625rem;
-}
-
-.summary p {
-    padding: 0.526rem 0rem 0rem 0.625rem;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-.work_experience,
-.education_desc {
-    padding: 1.5rem 1.325rem 0rem;
-}
-
-.work_experience h5,
-.education_desc h5 {
-    padding-top: 0.526rem;
-    padding-left: 0.625rem;
-    font-size: 0.912rem;
-    font-weight: 600;
-}
-
-.work_experience p,
-.education_desc p {
-    font-size: 0.825rem;
-    line-height: 1.5rem;
-    padding-left: 0.625rem;
-    font-style: italic;
-}
-
-.work_experience .desc,
-.education_desc .desc {
-    padding: 0.526rem 0rem 0rem 0.625rem;
-    font-size: 0.9rem;
-}
-
-main {
+.heading-img {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
-
-.skills {
-    width: 70%;
-}
-
-.cert {
-    width: 25%;
-}
-
-.skills h4 {
-    padding-top: 1rem;
-    padding-left: 0.625rem;
-}
-
-.strength span,
-.lang span,
-.progress {
-    display: block;
-    line-height: 1.725rem;
-    padding-left: 0.625rem;
-}
-
-label {
-    padding-right: 0.325rem;
-}
-.progress {
-    display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row;
     align-items: center;
+    padding-bottom: 0.65rem;
 }
 
-.desc_cert h5 {
-    padding: 0.526rem 0rem 0rem 0.625rem;
-    line-height: 1.3125rem;
-    font-size: 0.925rem;
+.heading-img h4 {
+    padding-left: 0.75rem;
 }
 
-.desc_cert ul {
-    padding-left: 1rem;
-    padding-top: 0.425rem;
+.heading-img img {
+    max-width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-position: center;
+    display: block;
+}
+
+.work-experience p,
+.education-desc p {
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.work-experience p.date,
+.education-desc p.date {
+    font-size: 0.73rem;
+    font-weight: 300;
     font-style: italic;
-    font-weight: 200;
-    font-size: 1rem;
+}
+
+ul.desc,
+ul.cert-date {
+    list-style-type: ' ☯ ';
+}
+
+ul.desc,
+ul.skills-list,
+ul.strength-list,
+ul.lang-list,
+ul.cert-date {
+    padding-left: 1.65rem;
+    padding-top: 1.125rem;
+    line-height: 1.65;
+}
+
+ul.skills-list,
+ul.strength-list,
+ul.lang-list {
+    list-style-type: ' ★ ';
+}
+
+.project-links {
+    text-decoration: underline;
+}
+
+.project-listing,
+.code,
+.strength,
+.lang,
+.desc-cert {
+    margin-top: 1.625rem;
+}
+
+.project-listing p {
+    line-height: 1.65;
+    padding-top: 0.35rem;
+    font-size: 0.85rem;
+    font-weight: 400;
 }
 
 /* MEDIA QUERY */
@@ -174,5 +242,38 @@ label {
 @media screen and (min-width: 1440px) {
     .wrapper {
         max-width: 1320px;
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 767px) {
+    header div.wrapper {
+        flex-flow: column;
+    }
+
+    .name-desc {
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-details {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    div.social-links {
+        padding-left: 0rem;
+    }
+
+    main div.wrapper {
+        flex-flow: column;
+        width: 100%;
+    }
+
+    .experience-education {
+        width: 100%;
+    }
+
+    .projects-skills-language {
+        width: 100%;
     }
 }
